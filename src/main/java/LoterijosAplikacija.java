@@ -9,5 +9,9 @@
  * @author M
  */
 public class LoterijosAplikacija {
-    
+    public static void main(String[] args) {
+       BilietoID id = new BilietoID();
+      
+        System.out.println(BilietoID.sukurtiID());
+    }
 }
