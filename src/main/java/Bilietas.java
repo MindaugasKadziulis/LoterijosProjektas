@@ -8,12 +8,9 @@
  *
  * @author M
  */
-public class LoterijosAplikacija {
-    public static void main(String[] args) {
-       BilietoNumeris id = new BilietoNumeris();
-        
-      
-        System.out.println(id.getNumber());
-       
-    }
+public class Bilietas {
+   
+    private int bilietoNumeris;
+    private int[] loterijosSkaiciuSeka;
+    
 }

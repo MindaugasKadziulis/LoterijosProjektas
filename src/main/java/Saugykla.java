@@ -1,5 +1,7 @@
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /*
@@ -13,10 +15,15 @@ import java.util.Map;
  * @author M
  */
 public class Saugykla {
-   
     
-    private Map<String, String> bilietas = new HashMap<>();
-
+    BilietoNumeris bn = new BilietoNumeris();
+   
+    private void bilietuSarasas (){
+    List<Bilietas> bilietai = new ArrayList<>();
+    
+    bilietai.add(new Bilietas());
+    
+            }
     
     
     
