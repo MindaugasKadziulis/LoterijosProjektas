@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package org.mindaugas.loterija.modelis;
 
 /**
  *
  * @author M
  */
-public class LoterijosAplikacija {
-    public static void main(String[] args) {
-       BilietoNumeris id = new BilietoNumeris();
-        
-      
-        System.out.println(id.getNumber());
-       
-    }
+public class Laimejimas {
+    
+    int bilietoNumeris;
+    int laimejimoDydis;
+    //constructoriu
+    
+    
 }
