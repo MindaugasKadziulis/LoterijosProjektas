@@ -17,11 +17,16 @@ import java.util.Map;
 public class Saugykla {
     
     BilietoNumeris bn = new BilietoNumeris();
-   
+    
+    
     private void bilietuSarasas (){
     List<Bilietas> bilietai = new ArrayList<>();
     
-    bilietai.add(new Bilietas());
+    bilietai.add(new Bilietas(1, 55443));
+    bilietai.add(new Bilietas(2, 43234));
+    bilietai.add(new Bilietas(3, 34342));
+    bilietai.add(new Bilietas(4, 23423));
+    bilietai.add(new Bilietas(5, 23432));
     
             }
     
