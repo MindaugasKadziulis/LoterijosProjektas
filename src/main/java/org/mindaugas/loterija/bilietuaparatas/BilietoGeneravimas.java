@@ -4,6 +4,7 @@ package org.mindaugas.loterija.bilietuaparatas;
 import static java.lang.Math.random;
 import java.util.Random;
 import java.util.Scanner;
+import org.mindaugas.loterija.modelis.Skaicius;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -19,6 +20,7 @@ public class BilietoGeneravimas {
     Scanner input = new Scanner(System.in);
 
     private int[] loterijosSkaiciuSeka;
+    private Skaicius[] seka;
     
     public String pasirinkimas(){
     System.out.println("Ivesti skaicius - rasyti iv generuoti skaicius rasyti gen");
@@ -52,13 +54,14 @@ return null;
     
     private String atsitiktinaiGeneruojamiSkaiciai (){
         
-          Random random = new Random();
-          
-        for (int i = 0; i < loterijosSkaiciuSeka.length; i++) 
-            loterijosSkaiciuSeka[i] = random.nextInt(9);
-        return "jums sugeneruoti skaiciai:" + loterijosSkaiciuSeka;
-     
-    }
-    
-
+        /*   Random random = new Random();
+        
+        for (int i = 0; i < seka.length; i++)
+        seka[i] = random.nextInt();
+        return "jums sugeneruoti skaiciai:" + seka;
+        
+        }
+        */
+return " ";
+}
 }

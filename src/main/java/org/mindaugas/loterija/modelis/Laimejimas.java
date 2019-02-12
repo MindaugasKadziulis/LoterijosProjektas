@@ -13,7 +13,16 @@ public class Laimejimas {
     
     int bilietoNumeris;
     int laimejimoDydis;
-    //constructoriu
+    //constructorius
+
+    public Laimejimas(int bilietoNumeris, int laimejimoDydis) {
+        
+        this.bilietoNumeris = bilietoNumeris;
+        this.laimejimoDydis = laimejimoDydis;
+    }
+   
     
+
     
+
 }

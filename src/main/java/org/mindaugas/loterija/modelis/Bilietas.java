@@ -39,6 +39,10 @@ public class Bilietas {
         return seka[i];
     }
 
+    public Bilietas(Skaicius[] seka) {
+        this.seka = seka;
+    }
+
  
 
    

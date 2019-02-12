@@ -1,6 +1,7 @@
 package org.mindaugas.loterija.app;
 
-import org.mindaugas.loterija.BilietoNumeris;
+
+import org.mindaugas.loterija.Loterija;
 import org.mindaugas.loterija.bilietuaparatas.BilietoGeneravimas;
 
 /*
@@ -15,10 +16,10 @@ import org.mindaugas.loterija.bilietuaparatas.BilietoGeneravimas;
  */
 public class Main {
     public static void main(String[] args) {
-       BilietoNumeris id = new BilietoNumeris();
-        
-      BilietoGeneravimas bg = new BilietoGeneravimas();
-        System.out.println(bg.pasirinkimas());
-       
     }
-}
+}    
+        /*   BilietoGeneravimas bg = new BilietoGeneravimas();
+        System.out.println(bg.pasirinkimas());
+        */
+    
+

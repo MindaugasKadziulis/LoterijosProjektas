@@ -1,18 +1,15 @@
-package org.mindaugas.loterija.modelis;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package org.mindaugas.loterija.modelis;
 
 /**
  *
  * @author M
  */
-public enum Skaicius {
-    _1, _2, _3, _4, _5, _6, _7, _8, _9, _10
-    
+public enum LaimejimuDalis {
 
-   
+    W_0_5, W_1_5, W_2_5, W_3_5, W_4_5, W_5_5,
 }
