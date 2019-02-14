@@ -2,8 +2,10 @@ package org.mindaugas.loterija.bilietuaparatas;
 
 
 import static java.lang.Math.random;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import org.mindaugas.loterija.modelis.Bilietas;
 import org.mindaugas.loterija.modelis.Skaicius;
 
 /*
@@ -16,11 +18,12 @@ import org.mindaugas.loterija.modelis.Skaicius;
  * @author M
  */
 public class BilietoGeneravimas {
-
+    private List<Skaicius> seka;
+Bilietas bil = new Bilietas(Skaicius._1, Skaicius._2, Skaicius._3, Skaicius._4, Skaicius._5);
     Scanner input = new Scanner(System.in);
 
     private int[] loterijosSkaiciuSeka;
-    private Skaicius[] seka;
+   
     
     public String pasirinkimas(){
     System.out.println("Ivesti skaicius - rasyti iv generuoti skaicius rasyti gen");
@@ -30,7 +33,7 @@ public class BilietoGeneravimas {
         return skaiciuIvedimas();
     }
     else if (choose == "gen"){
-        return atsitiktinaiGeneruojamiSkaiciai();
+        return atsitiktinaiGeneruojamiSkaiciai(seka);
                 }
     else { 
         return "prasome irasyti iv ar gen";
@@ -40,10 +43,10 @@ public class BilietoGeneravimas {
 
     private String skaiciuIvedimas() {
         
-        for (int i = 0; i < loterijosSkaiciuSeka.length; i++) {
+        for (int i = 0; i < seka.size(); i++) {
             System.out.println("Please enter number");
-            loterijosSkaiciuSeka[i] = input.nextInt();
-            return "jusu pasirinkti skaiciai:" + loterijosSkaiciuSeka;
+           // seka.size() = input.ne();
+            return "jusu pasirinkti skaiciai:" + seka;
             
             
         }
@@ -52,16 +55,18 @@ public class BilietoGeneravimas {
 return null;
     }
     
-    private String atsitiktinaiGeneruojamiSkaiciai (){
+    private String atsitiktinaiGeneruojamiSkaiciai (List<Skaicius> seka){
         
-        /*   Random random = new Random();
-        
-        for (int i = 0; i < seka.length; i++)
-        seka[i] = random.nextInt();
-        return "jums sugeneruoti skaiciai:" + seka;
-        
+        Random random = new Random();
+
+        for (int i = 0; i < seka.size(); i++) {
+         //  seka.size() = Skaicius.values()[random.nextInt(Skaicius.values().size)];
         }
-        */
+       
 return " ";
 }
+
+    private String atsitiktinaiGeneruojamiSkaiciai(Skaicius[] seka) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
