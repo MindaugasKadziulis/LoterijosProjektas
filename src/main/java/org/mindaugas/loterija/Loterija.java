@@ -31,7 +31,17 @@ public class Loterija  {
     private List<Bilietas> bilietai = new ArrayList<>();
 
     private List<Laimejimas> laimingi = new ArrayList<>();
+    
+    int visiBilietai = bilietai.size();
 
+    public int getVisiBilietai() {
+        return visiBilietai;
+    }
+
+    public void setVisiBilietai(int visiBilietai) {
+        this.visiBilietai = visiBilietai;
+    }
+    
 //    public Loterija(Skaicius[] seka) {
 //        
 //    }
@@ -40,6 +50,7 @@ public class Loterija  {
 
         bilietai.add(new Bilietas(_2, _3, _4, _5, _6));
         bilietai.add(new Bilietas(_2, _3, _4, _5, _6));
+        
 
     }
 
@@ -68,7 +79,7 @@ public class Loterija  {
 
     public void losimoZaidimas(){
         generuotiSeka();
-        atrinktiLaimetojus();
+        //atrinktiLaimetojus();
     }
     
     
@@ -82,15 +93,8 @@ public class Loterija  {
        
     }
     
-    private void atrinktiLaimetojus (){
-        
-        //laimingisSkaiciai;
-         bilietai.clear();
-         
-         
-        // laimingi;
-    }
+  
     
     
-    // 
+   
 }
