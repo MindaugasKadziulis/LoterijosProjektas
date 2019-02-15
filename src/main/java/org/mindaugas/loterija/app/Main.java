@@ -16,10 +16,10 @@ import org.mindaugas.loterija.bilietuaparatas.BilietoGeneravimas;
  */
 public class Main {
     public static void main(String[] args) {
+        
     }
 }    
-        /*   BilietoGeneravimas bg = new BilietoGeneravimas();
-        System.out.println(bg.pasirinkimas());
-        */
+        
+       
     
 

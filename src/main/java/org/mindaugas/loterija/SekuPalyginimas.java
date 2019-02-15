@@ -1,18 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.mindaugas.loterija;
 
 import java.util.List;
 import org.mindaugas.loterija.modelis.LaimejimuDalis;
 import org.mindaugas.loterija.modelis.Skaicius;
 
-/**
- *
- * @author M
- */
 public class SekuPalyginimas {
 
     public LaimejimuDalis sekuLyginimas(List<Skaicius> seka1, List<Skaicius> seka2) {
@@ -29,7 +20,7 @@ public class SekuPalyginimas {
         }
 
         return LaimejimuDalis.values()[c];
-        // i krepselius pagal enum 
+
     }
 
 }

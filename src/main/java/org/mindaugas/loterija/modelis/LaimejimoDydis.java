@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.mindaugas.loterija.modelis;
 
 import java.util.HashMap;
@@ -32,14 +27,13 @@ public class LaimejimoDydis {
 
     }
 
-    public Map<LaimejimuDalis, Double> isdalintiPriziniFonda (List<Skaicius> laimingisSkaiciai, List<Bilietas> bilietai, double prizinisFondas, double laimejimoSlenkstis) {
+    public Map<LaimejimuDalis, Double> isdalintiPriziniFonda(List<Skaicius> laimingisSkaiciai, List<Bilietas> bilietai, double prizinisFondas, double laimejimoSlenkstis) {
 
         for (Bilietas bilietas : bilietai) {
             LaimejimuDalis ld = sPal.sekuLyginimas(laimingisSkaiciai, bilietas.getSeka());
             laimejimuKiekiai.replace(ld, laimejimuKiekiai.get(ld) + 1);
 
         }
-        
 
         Map<LaimejimuDalis, Double> laimejimuSumos = null;
 
@@ -56,7 +50,3 @@ public class LaimejimoDydis {
     }
 
 }
-
-// laimejimu sumos
-// laimingi;
-
