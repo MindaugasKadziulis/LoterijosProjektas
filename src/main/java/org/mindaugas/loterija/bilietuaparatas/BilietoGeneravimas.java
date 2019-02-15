@@ -13,7 +13,9 @@ public class BilietoGeneravimas {
     Bilietas bil = new Bilietas(Skaicius._1, Skaicius._2, Skaicius._3, Skaicius._4, Skaicius._5);
     Scanner input = new Scanner(System.in);
 
-    
+    public String atspausdintiBilieta (){
+       return ""; 
+    }
     
     /*  public String pasirinkimas() {
     System.out.println("Ivesti skaicius - rasyti iv generuoti skaicius rasyti gen");

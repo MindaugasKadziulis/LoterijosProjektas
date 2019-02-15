@@ -15,9 +15,9 @@ import static org.junit.jupiter.api.Assertions.*;
  *
  * @author M
  */
-public class GeneravimoTestas {
+public class SekuPalyginimasTest {
     
-    public GeneravimoTestas() {
+    public SekuPalyginimasTest() {
     }
     
     @BeforeAll
