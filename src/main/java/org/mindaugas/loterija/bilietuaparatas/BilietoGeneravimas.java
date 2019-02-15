@@ -44,8 +44,8 @@ Bilietas bil = new Bilietas(Skaicius._1, Skaicius._2, Skaicius._3, Skaicius._4, 
     private String skaiciuIvedimas() {
         
         for (int i = 0; i < seka.size(); i++) {
-            System.out.println("Please enter number");
-           // seka.size() = input.ne();
+            System.out.println("Prasome ivesti skaicius");
+           seka.add(Skaicius.values()[input.nextInt(Skaicius.values().length)]);;
             return "jusu pasirinkti skaiciai:" + seka;
             
             
@@ -60,13 +60,13 @@ return null;
         Random random = new Random();
 
         for (int i = 0; i < seka.size(); i++) {
-         //  seka.size() = Skaicius.values()[random.nextInt(Skaicius.values().size)];
+            seka.add(Skaicius.values()[random.nextInt(Skaicius.values().length)]);
+            return "jums sugeneruota seka:" + seka;
+            
         }
        
 return " ";
 }
 
-    private String atsitiktinaiGeneruojamiSkaiciai(Skaicius[] seka) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 }
